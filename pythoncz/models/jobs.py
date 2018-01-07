@@ -28,7 +28,7 @@ def _group_business_data(data):
 
 
 def _load_business_data(data_file):
-    with open(data_file) as f:
+    with open(data_file, encoding='utf-8') as f:
         data = json.load(f)
 
     for feature in data['features']:
@@ -53,7 +53,7 @@ def _sort_cs(iterable, key='name'):
 
 # jobs.yml
 _path = os.path.join(app.static_folder, 'data', 'jobs.yml')
-with open(os.path.join(_path)) as f:
+with open(os.path.join(_path), encoding='utf-8') as f:
     data = yaml.load(f.read())
 
 data['job_boards'] = _sort_cs(data['job_boards'])
