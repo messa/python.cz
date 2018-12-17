@@ -4,7 +4,7 @@ feeds:
     ical: https://pyvo.cz/api/pyvo.ics
   - name: PyWorking
     url: https://pyworking.cz/
-    ical: https://pyworking.cz/workshops.ics
+    ical: https://pyworking.cz/XXX
   - name: PyWorking Sessions
     url: https://pyworking.cz/
     ical: http://api.meetup.com/pyworking/upcoming.ical
